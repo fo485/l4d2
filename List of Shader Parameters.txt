@@ -1,0 +1,280 @@
+"WorldVertexTransition"
+	"$alpha"	"0.55"
+	"$ignorez"	"1"
+	"$rimlight"	"1"
+	"$selfillum"    "1"
+	
+vertexlitgeneric
+
+模型
+"$envmap"						"env_cubemap"
+"$rimlight"	"1"
+"$selfillum"					"1"
+"$halflambert"				 	"0"
+"$nofog"						"1"
+"$model"						"1"
+"$nocull"						"0"
+"$flat"							"1"
+$nodecal "1"
+$nofog 1
+$halflambert 0
+$phong 1
+$phongfresnelranges "[.2 .5 5]"
+$allowdiffusemodulation 0
+$detailscale 2
+$detailblendfactor .001 
+$detailblendmode 0
+$detailAmount 0
+$ambientocclusion 1
+$reflectivity "[1.5 1.5 1.5]"
+$model 1
+$phongboost 60
+$basemapalphaphongmask 1
+$envmap env_cubemap
+$envmapfresnel 1
+$envmapFresnelMinMaxExp "[.4 1 .4]"
+$halflambert 0
+$phongalbedotint 1
+$selfillum 1
+$iris 1
+$basetexture 1
+$frame 1
+Proxies
+{
+    AnimatedTexture
+    {
+        animatedTextureVar           $basetexture
+        animatedTextureFrameNumVar   $frame
+        animatedTextureFrameRate     15
+    }
+}
+
+
+//模型2反
+"$envmap"						"env_cubemap"
+"$rimlight"	"1"
+"$selfillum"					"1"
+"$halflambert"				 	"0"
+"$nofog"						"1"
+"$model"						"1"
+"$nocull"						"0"
+"$flat"							"1"
+"$ignorez"	"1"
+$ignorez 1
+$nodecal "1"
+$nofog 1
+$halflambert 0
+$phong 1
+$phongfresnelranges "[.2 .5 5]"
+$allowdiffusemodulation 0
+$detailscale 2
+$detailblendfactor .001 
+$detailblendmode 0
+$detailAmount 0
+$ambientocclusion 1
+$reflectivity "[1.5 1.5 1.5]"
+$model 1
+$phongboost 60
+$basemapalphaphongmask 1
+$envmap env_cubemap
+$envmapfresnel 1
+$envmapFresnelMinMaxExp "[.4 1 .4]"
+$halflambert 0
+$phongalbedotint 1
+$selfillum 1
+$iris 1
+$basetexture 1
+$frame 1
+Proxies
+{
+    AnimatedTexture
+    {
+        animatedTextureVar           $basetexture
+        animatedTextureFrameNumVar   $frame
+        animatedTextureFrameRate     15
+    }
+}
+
+
+
+
+"$alpha"	"0.55"
+$alpha	0.55
+
+
+
+
+
+
+
+
+
+UnLitGeneric
+{ $ignorez 1
+insert
+{ $ignorez 1
+$baseTexture "vgui/2"
+$model 1
+$rimmask 1
+"$ignorez"	"1"
+$basetexture 1
+$frame 1
+Proxies
+{
+    AnimatedTexture
+    {
+        animatedTextureVar           $basetexture
+        animatedTextureFrameNumVar   $frame
+        animatedTextureFrameRate     15
+    }
+}
+
+"UnLitGeneric"
+{ $ignorez 1
+insert
+{ $ignorez 1
+$baseTexture "vgui/2"
+$rimmask 1
+$rimlight 1
+$selfillum 1
+$model 1
+"$ignorez"	"1"
+"$envmap"						"env_cubemap"
+"$nofog" "1"
+ $nofog 1
+$frame 1
+Proxies
+{
+    AnimatedTexture
+    {
+        animatedTextureVar           $basetexture
+        animatedTextureFrameNumVar   $frame
+        animatedTextureFrameRate     15
+    }
+}
+
+
+
+
+"UnLitGeneric"
+$baseTexture "vgui/2"
+$reflectivity "[1.5 1.5 1.5]"
+"$envmap"						"env_cubemap"
+$model 1
+$rimlight 1
+$selfillum 1
+$nofog 1
+$ignorez 1
+"$nofog"	"1"
+"$ignorez"	"1"
+$basetexture 1
+$frame 1
+Proxies
+{
+    AnimatedTexture
+    {
+        animatedTextureVar           $basetexture
+        animatedTextureFrameNumVar   $frame
+        animatedTextureFrameRate     15
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+模型vf
+"$rimlight"	"1"
+"$selfillum"					"1"
+"$ignorez"						"1"
+"$halflambert"				 	"1"
+"$nofog"						"1"
+"$model"						"1"
+"$nocull"						"0"
+"$flat"							"1"
+"$envmap"						"env_cubemap"
+$halflambert 0
+$phong 1
+$phongboost 3
+$phongfresnelranges "[.2 .5 5]"
+$allowdiffusemodulation 0
+$ignorez 1
+$detailscale 2
+$detailblendfactor .001 
+$detailblendmode 0
+$detailAmount 0
+$translucent 1
+$ambientocclusion 1
+Proxies
+{
+BloodyHands
+{
+resultVar $detailAmount
+}
+Equals
+{
+srcVar1 $detailAmount
+resultVar $detailblendfactor
+}
+
+
+地图
+$reflectivity "[1.5 1.5 1.5]"
+$nodecal "1"
+"$alpha"	"0.55"
+$alpha	0.55
+"$rimlight"	"1"
+"$selfillum"					"1"
+"$halflambert"				 	"1"
+"$nofog"						"1"
+"$model"						"1"
+"$nocull"						"0"
+"$flat"							"1"
+"$envmap"						"env_cubemap"
+$envmap			env_cubemap
+$halflambert 0
+$phong 1
+$phongboost 3
+$phongfresnelranges "[.2 .5 5]"
+$allowdiffusemodulation 0
+$detailscale 2
+$detailblendfactor .001 
+$detailblendmode 0
+$detailAmount 0
+$ambientocclusion 1
+$translucent 1
+}
+
+$model 1
+"$model"						"1"
+"$rimlight"	"1"
+"$selfillum" "1"
+$selfillum 1
+$rimlight 1
+"$nofog"						"1"
+"$envmap"						"env_cubemap"
+$envmap			env_cubemap
+"$alpha"	"0.55"
+$alpha	0.55
+$nocull 1
+$translucent 1
+"$nocull"	"1"
+"$translucent"	"1"
+}
